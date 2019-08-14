@@ -25,7 +25,7 @@ The installation will tell you where the client certificate is located. Copy tha
 
 **Setup iptables:**
 
-Delete existing rules:
+Delete existing rules:  
 ```
 sudo iptables -P INPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
@@ -38,6 +38,8 @@ sudo iptables -X
 
 Setup Network Address Translation (NAT):    
 `sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE`   
+
+Now you can test the setup and if it's working you can set all other iptable/firewall restrictions you need on the server.  
 
 Install iptables-persistent, it will save iptable rules after install is done:  
 `sudo apt-get install iptables-persistent`  
