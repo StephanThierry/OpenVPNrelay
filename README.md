@@ -13,7 +13,7 @@ Download OpenVPN:
 Run installer:  
 `sudo bash openvpn-install.sh`  
 
-* Enter public IP - Accept default port - Select DNS Google 
+* Enter public IP - Accept default port - Select Google DNS  
 
 The installation will tell you where the client certificate is located. Copy that to a local .ovpn file on your workstation `MyConnection.ovpn`   
 
