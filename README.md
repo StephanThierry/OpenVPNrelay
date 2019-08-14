@@ -30,7 +30,7 @@ sudo iptables -F
 sudo iptables -X
 ```
 
-Set public IP forward:  
+Setup Network Adress Translation:    
 `sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE`   
 
 Install iptables-persistent, it will save iptable rules after install is done:  
