@@ -1,6 +1,12 @@
 # OpenVPN Static IP Relay
 Setting up an OpenVPN server for public/external IP address relay. This will allow support consultants to use static/whitelisted IP from either home, office or at customer site.
 
+If you are using the included scripts you need to make them executable first:  
+`sudo chmod +x 01_OpenVPNserver_install.sh`  
+`sudo chmod +x 02_IpTableRules.sh`  
+And then run them:  
+`sudo ./01_OpenVPNserver_install.sh`  
+`sudo ./02_IpTableRules.sh`  
 
 ## Setup OpenVPN IP relay on Ubuntu 18.04  
 
