@@ -4,7 +4,7 @@ Setting up an OpenVPN server for public/external IP address relay. This will all
 
 ## Setup OpenVPN IP relay on Ubuntu 18.04  
 
-Show public IP:
+Show public IP (this will be used during the OpenVPN server installation):  
 `dig TXT +short o-o.myaddr.l.google.com @ns1.google.com`
 
 Download OpenVPN:  
