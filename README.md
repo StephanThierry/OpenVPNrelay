@@ -43,3 +43,27 @@ Now you can test the setup and if it's working you can set all other iptable/fir
 
 Install iptables-persistent, it will save iptable rules after install is done:  
 `sudo apt-get install iptables-persistent`  
+
+
+## Change login type to username / password  
+**Server**  
+Edit the server.conf file  
+`sudo vim /etc/openvpn/server/server.conf`  
+If your .conf file is elsewhere - find it using:  `cd / && sudo find -name server.conf`    
+Delete or comment out (adding # in front of): `auth`, `tls-auth`, `cipher` and `crl-verify`  
+
+Add: 
+`client-cert-not-required`  
+`plugin  /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login`  
+`username-as-common-name`  
+
+**Note!** On other versions of Linux the `openvpn-plugin-auth-pam.so` file may have another name and be located elsewhere. Like "/usr/lib/openvpn/openvpn-auth-pam.so", "/usr/share/openvpn/plugin/lib/openvpn-auth-pam.so" etc.  You can likely find it using: `cd / && sudo find -name *pam.so`   
+
+**Client**  
+In your client .ovpn file delete or comment out: 
+`auth` and `cipher`  
+Add:  
+`auth-user-pass` 
+
+
+
