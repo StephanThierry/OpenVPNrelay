@@ -25,7 +25,7 @@ The installation will tell you where the client certificate is located. Copy tha
 
 **Setup iptables:**
 
-Delete existing rules:  
+Delete existing rules (I'm not sure why this is nessesary, but I have tested the configuration twice and both times it would not work until I did it.):  
 ```
 sudo iptables -P INPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
