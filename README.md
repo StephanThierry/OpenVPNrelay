@@ -65,5 +65,9 @@ In your client .ovpn file delete or comment out:
 Add:  
 `auth-user-pass` 
 
+### Add users
+Now you need to add the users:  
+Add user: `adduser [username]`  
+Change user password: `sudo passwd [username]`  
 
-
+Now the users should be able to connect using the certificate (.ovpn-file) and their username/password.  
