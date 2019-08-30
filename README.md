@@ -70,3 +70,7 @@ Now you need to add the users:
 `sudo adduser [username]` and set password: `sudo passwd [username]`  
 
 Now the users should be able to connect using the certificate (.ovpn-file) and their username/password.  
+
+Note. If you get this error:  `Please enter a username matching the regular expression configured`  you can edit that regex in `/etc/adduser.conf` or you can use: the --force-badname option like so: `sudo adduser [username] --force-badname`  
+
+ 
