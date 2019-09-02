@@ -49,9 +49,9 @@ Install iptables-persistent, it will save iptable rules after install is done:
 
 
 **DNS settings**
-If everything is connecting correctly, but you can't get DNS to work (Like if you `ping facebook.com` and you get the error: `Ping request could not find host facebook.com.`) ensure that these 2 lines are in your server.conf file.  
-`push "dhcp-option DNS 8.8.8.8"` 
-`push "dhcp-option DNS 8.8.4.4"` 
+If everything is connecting correctly, but you can't get DNS to work (Like if you `ping facebook.com` and you get the error: `Ping request could not find host facebook.com.`) ensure that these 2 lines are in your server.conf file.    
+`push "dhcp-option DNS 8.8.8.8"`   
+`push "dhcp-option DNS 8.8.4.4"`   
 You can access the .conf file using: `sudo vim /etc/openvpn/server/server.conf`
 
 ## Change login type to username / password  
