@@ -1,5 +1,7 @@
 # OpenVPN Static IP Relay
-Setting up an OpenVPN server for public/external IP address relay. This will allow support consultants to use static/whitelisted IP from either home, office or at customer site.
+Setting up an OpenVPN server for public/external IP address relay. This will allow support consultants to use static/whitelisted IP from either home, office or at customer site.  
+
+On AWS this can run on a t3.nano at a price of about 3.75$/month making this service quite affordable.    
 
 If you are using the included scripts you need to make them executable first:  
 `sudo chmod +x 01_OpenVPNserver_install.sh`  
