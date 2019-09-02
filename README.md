@@ -23,7 +23,8 @@ Run installer:
 
 * Enter public IP - Accept default port - Select Google DNS  
 
-The installation will tell you where the client certificate is located. Copy that to a local .ovpn file on your workstation `MyConnection.ovpn`   
+The installation will tell you where the client certificate is located. If you've use the default client-name it will be: `/home/ubuntu/client.ovpn`.  
+Copy that to a local .ovpn file on your workstation `MyConnection.ovpn`   
 
 **Setup iptables:**
 
