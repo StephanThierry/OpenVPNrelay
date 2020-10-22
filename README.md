@@ -23,10 +23,10 @@ Run installer:
 
 * Enter public IP - Accept default port - Select Google DNS  
 
-The installation will tell you where the client certificate is located. For example:  
-`The client configuration is available in: /root/client.ovpn`
-Copy that to a local .ovpn file on your workstation `MyConnection.ovpn` - one option is to show it on the screen and copy-paste it into a local file using: `cat /root/client.ovpn` or use a tool like WinSCP that enables file transfer.      
-
+The installation will tell you where the client certificate is located. For example:   
+`The client configuration is available in: /root/client.ovpn`  
+Copy that to a local .ovpn file on your workstation `MyConnection.ovpn` - one option is to show it on the screen and copy-paste it into a local file using: `cat /root/client.ovpn` or use a tool like WinSCP that enables file transfer.        
+  
 **Setup iptables:**
 
 Delete existing rules (I'm not sure why this is nessesary, but I have tested the configuration twice and both times it would not work until I did it.):  
