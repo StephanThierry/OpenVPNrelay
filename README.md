@@ -71,13 +71,13 @@ Add:
 
 **Client**  
 In your client .ovpn file delete or comment out: 
-`auth` and `cipher`  
+`auth` and `cipher` plus any line containg: `block-outside-dns`  
 Add:  
 `auth-user-pass` 
 
 ### Restart OpenVPN  
 You may need to restart the OpenVPN service to pickup the config changes.  
-`service openvpn restart` 
+`sudo systemctl restart openvpn*` 
 
 ### Add users
 Now you need to add the users:  
