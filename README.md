@@ -75,6 +75,10 @@ In your client .ovpn file delete or comment out:
 Add:  
 `auth-user-pass` 
 
+### Restart OpenVPN  
+You may need to restart the OpenVPN service to pickup the config changes.  
+`service openvpn restart` 
+
 ### Add users
 Now you need to add the users:  
 `sudo adduser [username]` and set password: `sudo passwd [username]`  
