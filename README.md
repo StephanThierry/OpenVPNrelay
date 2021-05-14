@@ -10,7 +10,7 @@ And then run them:
 `sudo ./01_OpenVPNserver_install.sh`  
 `sudo ./02_IpTableRules.sh`  
 
-## Setup OpenVPN IP relay on Ubuntu 18.04  
+## Setup OpenVPN IP relay on Ubuntu 18.04, should also work on Ubuntu 20.04    
 
 Show public IP (this will be used during the OpenVPN server installation):  
 `dig TXT +short o-o.myaddr.l.google.com @ns1.google.com`
@@ -70,8 +70,11 @@ Add:
 **Note!** On other versions of Linux the `openvpn-plugin-auth-pam.so` file may have another name and be located elsewhere. Like "/usr/lib/openvpn/openvpn-auth-pam.so", "/usr/share/openvpn/plugin/lib/openvpn-auth-pam.so" etc.  You can likely find it using: `cd / && sudo find -name *pam.so`   
 
 **Client**  
-In your client .ovpn file delete or comment out: 
-`auth` and `cipher` plus any line containg: `block-outside-dns`  
+In your client .ovpn file delete or comment out lines beginning with: 
+1. `auth` 
+2. `cipher`
+3. `block-outside-dns` (Also lines ending in this statemtent)    
+
 Add:  
 `auth-user-pass` 
 
