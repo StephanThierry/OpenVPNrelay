@@ -1,4 +1,5 @@
-# OpenVPN Static IP Relay
+# OpenVPN Static IP Relay on Ubuntu  
+*(This guide was written for Ubuntu 18.04 but will likely work fine on 16.04 and 20.04 plus versions of Debian with minor tweeks.)*    
 Setting up an OpenVPN server for public/external IP address relay. This will allow support consultants to use static/whitelisted IP from either home, office or at customer site.  
 
 On AWS this can run on a t3.nano at a price of about 3.75$/month making this service quite affordable. Buying a 1y-Reserved Instance (AWS RI) of a t3.nano, will bring the price down to about 26$/year.  
