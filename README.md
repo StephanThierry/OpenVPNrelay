@@ -83,9 +83,12 @@ Add:
 You may need to restart the OpenVPN service to pickup the config changes.  
 `sudo systemctl restart openvpn*` 
 
-### Add users
-Now you need to add the users:  
-`sudo adduser [username]` and set password: `sudo passwd [username]`  
+### Adding and changing users  
+Add user:  
+`sudo adduser [username]` 
+
+Overwrite password of exiting user:  
+`sudo passwd [username]`  
 
 Now the users should be able to connect using the certificate (.ovpn-file) and their username/password.  
 
